@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+</head>
+<body>
+    <div id = "plot0"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "precision": 0.5081967213114754,
+        "recall": 1.0,
+        "rev": "workspace",
+        "threshold": 0
+    },
+    {
+        "precision": 0.8,
+        "recall": 0.9032258064516129,
+        "rev": "workspace",
+        "threshold": 1
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "recall",
+            "type": "quantitative",
+            "title": "recall"
+        },
+        "y": {
+            "field": "precision",
+            "type": "quantitative",
+            "title": "precision",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot0', spec);
+</script>
+<div id = "plot1"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "fpr": 0.0,
+        "rev": "workspace",
+        "threshold": 2,
+        "tpr": 0.0
+    },
+    {
+        "fpr": 0.23333333333333334,
+        "rev": "workspace",
+        "threshold": 1,
+        "tpr": 0.9032258064516129
+    },
+    {
+        "fpr": 1.0,
+        "rev": "workspace",
+        "threshold": 0,
+        "tpr": 1.0
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "fpr",
+            "type": "quantitative",
+            "title": "fpr"
+        },
+        "y": {
+            "field": "tpr",
+            "type": "quantitative",
+            "title": "tpr",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot1', spec);
+</script>
+<div id = "plot2"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 0
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 1
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 2
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 3
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 4
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 5
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 6
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 7
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 8
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 9
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 10
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 11
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 12
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 13
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 14
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 15
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 16
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 17
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 18
+    },
+    {
+        "Predicted": "0",
+        "output": "1",
+        "rev": "workspace",
+        "step": 19
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 20
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 21
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 22
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 23
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 24
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 25
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 26
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 27
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 28
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 29
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 30
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 31
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 32
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 33
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 34
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 35
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 36
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 37
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 38
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 39
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 40
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 41
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 42
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 43
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 44
+    },
+    {
+        "Predicted": "0",
+        "output": "1",
+        "rev": "workspace",
+        "step": 45
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 46
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 47
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 48
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 49
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 50
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 51
+    },
+    {
+        "Predicted": "0",
+        "output": "1",
+        "rev": "workspace",
+        "step": 52
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 53
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 54
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 55
+    },
+    {
+        "Predicted": "1",
+        "output": "1",
+        "rev": "workspace",
+        "step": 56
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 57
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 58
+    },
+    {
+        "Predicted": "0",
+        "output": "0",
+        "rev": "workspace",
+        "step": 59
+    },
+    {
+        "Predicted": "1",
+        "output": "0",
+        "rev": "workspace",
+        "step": 60
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "Predicted",
+            "type": "quantitative",
+            "title": "Predicted",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot2', spec);
+</script>
+</body>
+</html>
