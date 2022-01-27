@@ -1,0 +1,8 @@
+!data/external/game_table.html
+data/external/*
+
+!data/processed/.gitkeep
+data/processed/*
+
+.luigi/*
+!.luigi/.gitkeep
